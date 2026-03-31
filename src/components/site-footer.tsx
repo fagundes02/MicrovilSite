@@ -10,8 +10,8 @@ const legal = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-slate-200 bg-white dark:border-white/10 dark:bg-slate-950">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-10 text-sm text-slate-500 dark:text-slate-400 lg:px-8">
+    <footer className="border-t border-slate-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-6 py-10 text-sm text-slate-500 dark:text-zinc-400 lg:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="flex items-start gap-3">
             <Image
@@ -21,7 +21,7 @@ export function SiteFooter() {
               height={40}
             />
             <div>
-              <p className="font-semibold text-slate-950 dark:text-white">
+              <p className="font-semibold text-slate-950 dark:text-zinc-100">
                 Microvil Contabil
               </p>
               <p className="mt-1 max-w-sm">
@@ -32,14 +32,14 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-wrap gap-6 md:justify-end">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-500">
                 Site
               </p>
               <ul className="mt-3 space-y-2">
                 <li>
                   <Link
                     href="/planos"
-                    className="text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400"
+                    className="text-slate-700 hover:text-sky-600 dark:text-zinc-300 dark:hover:text-sky-400"
                   >
                     Planos
                   </Link>
@@ -47,7 +47,7 @@ export function SiteFooter() {
                 <li>
                   <Link
                     href="/sobre"
-                    className="text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400"
+                    className="text-slate-700 hover:text-sky-600 dark:text-zinc-300 dark:hover:text-sky-400"
                   >
                     Sobre
                   </Link>
@@ -55,7 +55,7 @@ export function SiteFooter() {
                 <li>
                   <Link
                     href="/contato"
-                    className="text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400"
+                    className="text-slate-700 hover:text-sky-600 dark:text-zinc-300 dark:hover:text-sky-400"
                   >
                     Contato
                   </Link>
@@ -63,7 +63,7 @@ export function SiteFooter() {
                 <li>
                   <Link
                     href="/blog"
-                    className="text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400"
+                    className="text-slate-700 hover:text-sky-600 dark:text-zinc-300 dark:hover:text-sky-400"
                   >
                     Blog
                   </Link>
@@ -71,7 +71,7 @@ export function SiteFooter() {
               </ul>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-zinc-500">
                 Legal
               </p>
               <ul className="mt-3 space-y-2">
@@ -79,7 +79,7 @@ export function SiteFooter() {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-slate-700 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400"
+                      className="text-slate-700 hover:text-sky-600 dark:text-zinc-300 dark:hover:text-sky-400"
                     >
                       {item.label}
                     </Link>
@@ -89,9 +89,9 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 border-t border-slate-200 pt-8 text-xs dark:border-white/10 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-2 border-t border-slate-200 pt-8 text-xs dark:border-zinc-800 sm:flex-row sm:items-center sm:justify-between">
           <p>© {currentYear} Microvil Contabil. Todos os direitos reservados.</p>
-          <p className="text-slate-400 dark:text-slate-500">
+          <p className="text-slate-400 dark:text-zinc-500">
             Dados fiscais exigem cuidado. Revise politicas com seu advogado.
           </p>
         </div>
@@ -99,3 +99,4 @@ export function SiteFooter() {
     </footer>
   );
 }
+

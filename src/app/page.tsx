@@ -204,11 +204,11 @@ export default function Home() {
   const contactEmail = getContactEmail();
 
   return (
-    <MarketingPage mainClassName="min-h-screen bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.16),transparent_32%),linear-gradient(180deg,#eff6ff_0%,#ffffff_42%,#f8fafc_100%)] text-slate-900 dark:bg-[radial-gradient(circle_at_top,rgba(14,165,233,0.20),transparent_30%),linear-gradient(180deg,#020617_0%,#0f172a_42%,#111827_100%)] dark:text-white">
+    <MarketingPage mainClassName="min-h-screen bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.16),transparent_32%),linear-gradient(180deg,#eff6ff_0%,#ffffff_42%,#f8fafc_100%)] text-slate-900 dark:bg-[radial-gradient(circle_at_top,rgba(148,163,184,0.08),transparent_32%),linear-gradient(180deg,#18181b_0%,#18181b_45%,#111827_100%)] dark:text-white">
       <section className="overflow-hidden">
         <div className="mx-auto grid w-full max-w-7xl gap-14 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-28">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-sky-700 shadow-sm dark:border-sky-400/20 dark:bg-sky-400/10 dark:text-sky-200">
+            <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-sky-700 shadow-sm dark:border-zinc-700/80 dark:bg-zinc-900/70 dark:text-zinc-200">
               <CircleDashed className="h-3.5 w-3.5" />
               Plataforma para contabilidades e empresas
             </span>
@@ -223,15 +223,15 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
-              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-white/5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                 <CheckCircle2 className="h-4 w-4 text-emerald-500" />
                 Instalacao assistida
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-white/5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                 <CheckCircle2 className="h-4 w-4 text-emerald-500" />
                 Monitoramento continuo
               </span>
-              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-white/10 dark:bg-white/5">
+              <span className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                 <CheckCircle2 className="h-4 w-4 text-emerald-500" />
                 Operacao preparada para crescer
               </span>
@@ -249,7 +249,7 @@ export default function Home() {
               </a>
               <a
                 href="#modulos"
-                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50 dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:border-white/25 dark:hover:bg-white/10"
+                className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3.5 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50 dark:border-zinc-700/80 dark:bg-zinc-900/60 dark:text-white dark:hover:border-zinc-600 dark:hover:bg-zinc-800/70"
               >
                 Conhecer a solucao
               </a>
@@ -262,9 +262,9 @@ export default function Home() {
                 return (
                   <div
                     key={item.title}
-                    className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-[0_10px_40px_rgba(15,23,42,0.05)] backdrop-blur dark:border-white/10 dark:bg-white/5 dark:shadow-[0_10px_40px_rgba(2,6,23,0.25)]"
+                    className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-[0_10px_40px_rgba(15,23,42,0.05)] backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/60 dark:shadow-[0_10px_40px_rgba(2,6,23,0.25)]"
                   >
-                    <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-2.5 text-sky-700 dark:border-sky-400/20 dark:bg-sky-400/10 dark:text-sky-200">
+                    <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-2.5 text-sky-700 dark:border-zinc-700/80 dark:bg-zinc-900/70 dark:text-zinc-200">
                       <Icon className="h-5 w-5" />
                     </span>
                     <p className="mt-4 text-base font-semibold text-slate-950 dark:text-white">
@@ -280,8 +280,8 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 -z-10 rounded-4xl bg-sky-300/40 blur-3xl dark:bg-sky-500/20" />
-            <div className="rounded-4xl border border-slate-200 bg-white/90 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.10)] backdrop-blur dark:border-white/10 dark:bg-slate-900/80 dark:shadow-[0_20px_70px_rgba(2,6,23,0.45)]">
+            <div className="absolute inset-0 -z-10 rounded-4xl bg-sky-300/40 blur-3xl dark:bg-zinc-800/30" />
+            <div className="rounded-4xl border border-slate-200 bg-white/90 p-6 shadow-[0_20px_70px_rgba(15,23,42,0.10)] backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/80 dark:shadow-[0_20px_70px_rgba(2,6,23,0.45)]">
               <div className="flex items-center justify-between rounded-2xl bg-slate-950 px-5 py-4 text-white">
                 <div>
                   <p className="text-xs uppercase tracking-[0.24em] text-sky-200">
@@ -298,7 +298,7 @@ export default function Home() {
 
               <div className="mt-5 grid gap-4">
                 <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-white/5">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <p className="text-sm font-semibold text-slate-950 dark:text-white">
@@ -309,47 +309,43 @@ export default function Home() {
                           automatico de XML para centralizacao da operacao.
                         </p>
                       </div>
-                      <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-2 text-sky-700 dark:border-sky-400/20 dark:bg-sky-400/10 dark:text-sky-200">
+                      <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-2 text-sky-700 dark:border-zinc-700/80 dark:bg-zinc-900/70 dark:text-zinc-200">
                         <FolderSync className="h-5 w-5" />
                       </span>
                     </div>
                   </div>
 
-                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-white/5">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                       Status operacional
                     </p>
                     <div className="mt-4 space-y-3">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-slate-600 dark:text-slate-300">
-                          Dispositivo
-                        </span>
-                        <span className="font-medium text-slate-950 dark:text-white">
+                      <div className="text-sm">
+                        <p className="text-slate-600 dark:text-slate-300">Dispositivo</p>
+                        <p className="mt-1 font-medium text-slate-950 dark:text-white">
                           PDV-Loja-01
-                        </span>
+                        </p>
                       </div>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-slate-600 dark:text-slate-300">
-                          Ultimo heartbeat
-                        </span>
-                        <span className="font-medium text-emerald-600 dark:text-emerald-300">
-                          ha 32s
-                        </span>
+                      <div className="text-sm">
+                        <p className="text-slate-600 dark:text-slate-300">
+                          Último heartbeat
+                        </p>
+                        <p className="mt-1 font-medium text-emerald-600 dark:text-emerald-300">
+                          há 32s
+                        </p>
                       </div>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-slate-600 dark:text-slate-300">
-                          Fila pendente
-                        </span>
-                        <span className="font-medium text-slate-950 dark:text-white">
+                      <div className="text-sm">
+                        <p className="text-slate-600 dark:text-slate-300">Fila pendente</p>
+                        <p className="mt-1 font-medium text-slate-950 dark:text-white">
                           0 XMLs
-                        </span>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-white/5">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                       Monitoramento
                     </p>
@@ -360,7 +356,7 @@ export default function Home() {
                       Online, offline, fila pendente e ultima atualizacao.
                     </p>
                   </div>
-                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-white/10 dark:bg-white/5">
+                  <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 dark:border-zinc-700/70 dark:bg-zinc-900/60">
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
                       Implantacao
                     </p>
@@ -388,9 +384,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-slate-200 bg-white/70 dark:border-white/10 dark:bg-slate-950/40">
+      <section className="border-y border-slate-200 bg-white/70 dark:border-zinc-700/70 dark:bg-slate-950/40">
         <div className="mx-auto grid w-full max-w-7xl gap-4 px-6 py-6 lg:grid-cols-4 lg:px-8">
-          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-white/10 dark:bg-white/5">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-zinc-700/70 dark:bg-zinc-900/60">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
               Modelo comercial
             </p>
@@ -398,7 +394,7 @@ export default function Home() {
               Software + implantacao
             </p>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-white/10 dark:bg-white/5">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-zinc-700/70 dark:bg-zinc-900/60">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
               Operacao
             </p>
@@ -406,7 +402,7 @@ export default function Home() {
               Coleta e controle centralizados
             </p>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-white/10 dark:bg-white/5">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-zinc-700/70 dark:bg-zinc-900/60">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
               Entrega
             </p>
@@ -414,7 +410,7 @@ export default function Home() {
               Painel + monitoramento + relatorios
             </p>
           </div>
-          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-white/10 dark:bg-white/5">
+          <div className="rounded-3xl border border-slate-200 bg-white px-5 py-4 dark:border-zinc-700/70 dark:bg-zinc-900/60">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
               Foco
             </p>
@@ -425,7 +421,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="problema" className="border-y border-slate-200 bg-white/70 dark:border-white/10 dark:bg-slate-950/60">
+      <section id="problema" className="border-y border-slate-200 bg-white/70 dark:border-zinc-700/70 dark:bg-slate-950/60">
         <div className="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
           <SectionTitle
             label="O problema que resolvemos"
@@ -437,7 +433,7 @@ export default function Home() {
             {problems.map((item) => (
               <article
                 key={item.title}
-                className="rounded-4xl border border-slate-200 bg-slate-50 p-8 backdrop-blur dark:border-white/10 dark:bg-white/5"
+                className="rounded-4xl border border-slate-200 bg-slate-50 p-8 backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/60"
               >
                 <p className="text-lg font-semibold tracking-tight text-slate-950 dark:text-white">
                   {item.title}
@@ -466,7 +462,7 @@ export default function Home() {
               return (
                 <article
                   key={item.title}
-                  className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_20px_50px_rgba(2,6,23,0.25)]"
+                  className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)] dark:border-zinc-700/70 dark:bg-zinc-900/60 dark:shadow-[0_20px_50px_rgba(2,6,23,0.25)]"
                 >
                   <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-3 text-sky-700 dark:border-sky-400/20 dark:bg-sky-400/10 dark:text-sky-200">
                     <Icon className="h-5 w-5" />
@@ -496,7 +492,7 @@ export default function Home() {
             {method.map((item, index) => (
               <div
                 key={item}
-                className="rounded-[1.75rem] border border-slate-200 bg-white p-6 backdrop-blur dark:border-white/10 dark:bg-white/5"
+                className="rounded-[1.75rem] border border-slate-200 bg-white p-6 backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/60"
               >
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sm font-semibold text-sky-700 dark:bg-sky-500/20 dark:text-sky-200">
                   {String(index + 1).padStart(2, "0")}
@@ -523,7 +519,7 @@ export default function Home() {
               return (
                 <div
                   key={item.title}
-                  className="rounded-4xl border border-slate-200 bg-white p-7 shadow-[0_20px_50px_rgba(15,23,42,0.06)] dark:border-white/10 dark:bg-white/5 dark:shadow-[0_20px_50px_rgba(2,6,23,0.25)]"
+                  className="rounded-4xl border border-slate-200 bg-white p-7 shadow-[0_20px_50px_rgba(15,23,42,0.06)] dark:border-zinc-700/70 dark:bg-zinc-900/60 dark:shadow-[0_20px_50px_rgba(2,6,23,0.25)]"
                 >
                   <div className="flex items-start gap-4">
                     <span className="inline-flex rounded-2xl border border-sky-200 bg-sky-50 p-3 text-sky-700 dark:border-sky-400/20 dark:bg-sky-400/10 dark:text-sky-200">
@@ -557,7 +553,7 @@ export default function Home() {
             {modules.map((module) => (
               <article
                 key={module.title}
-                className="flex h-full flex-col rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)] backdrop-blur dark:border-white/10 dark:bg-white/5 dark:shadow-[0_20px_50px_rgba(2,6,23,0.3)]"
+                className="flex h-full flex-col rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_20px_50px_rgba(15,23,42,0.06)] backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/60 dark:shadow-[0_20px_50px_rgba(2,6,23,0.3)]"
               >
                 <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-300">
                   {module.eyebrow}
@@ -608,7 +604,7 @@ export default function Home() {
             ].map((step, index) => (
               <div
                 key={step}
-                className="flex gap-5 rounded-[1.75rem] border border-slate-200 bg-white p-6 backdrop-blur dark:border-white/10 dark:bg-white/5"
+                className="flex gap-5 rounded-[1.75rem] border border-slate-200 bg-white p-6 backdrop-blur dark:border-zinc-700/70 dark:bg-zinc-900/60"
               >
                 <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-slate-950 text-sm font-semibold text-white">
                   {index + 1}
@@ -632,7 +628,7 @@ export default function Home() {
             {results.map((item) => (
               <div
                 key={item}
-                className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 dark:border-white/10 dark:bg-white/5"
+                className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 dark:border-zinc-700/70 dark:bg-zinc-900/60"
               >
                 <p className="text-lg font-semibold tracking-tight text-slate-950 dark:text-white">
                   {item}
@@ -643,7 +639,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="border-y border-slate-200 bg-slate-50 dark:border-white/10 dark:bg-slate-900/70">
+      <section id="faq" className="border-y border-slate-200 bg-slate-50 dark:border-zinc-700/70 dark:bg-slate-900/70">
         <div className="mx-auto w-full max-w-5xl px-6 py-20 lg:px-8">
           <SectionTitle
             label="FAQ"
@@ -655,7 +651,7 @@ export default function Home() {
             {faqs.map((item) => (
               <details
                 key={item.question}
-                className="group rounded-[1.75rem] border border-slate-200 bg-white p-7 dark:border-white/10 dark:bg-white/5"
+                className="group rounded-[1.75rem] border border-slate-200 bg-white p-7 dark:border-zinc-700/70 dark:bg-zinc-900/60"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-slate-950 marker:hidden dark:text-white">
                   <span>{item.question}</span>
@@ -712,3 +708,4 @@ export default function Home() {
     </MarketingPage>
   );
 }
+
