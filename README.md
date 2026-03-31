@@ -1,3 +1,32 @@
+Site institucional **Microvil Contabil** (landing + paginas legais + SEO basico).
+
+## Configuracao
+
+Copie `.env.example` para `.env.local` e preencha URLs, WhatsApp e e-mail reais.
+
+- `NEXT_PUBLIC_SITE_URL` — URL publica do site (sitemap, Open Graph, robots)
+- `NEXT_PUBLIC_APP_URL` — URL do painel ou `/`
+- `NEXT_PUBLIC_WHATSAPP_NUMBER` — apenas digitos com DDI (ex: `5535990012345`)
+- `NEXT_PUBLIC_CONTACT_EMAIL` — e-mail exibido no site
+- `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` ou `NEXT_PUBLIC_GA_MEASUREMENT_ID` — analytics opcional
+
+## Paginas
+
+- `/` — landing
+- `/planos` — planos comerciais
+- `/contato` — contato
+- `/sobre` — sobre
+- `/blog` — listagem de artigos
+- `/blog/coleta-xml-automatica` — primeiro artigo (exemplo)
+- `/politica-de-privacidade` e `/termos-de-uso` — modelos legais (revise com advogado)
+- `not-found` — pagina 404 com layout do site
+- `/manifest.webmanifest` — PWA basico (nome, cores, icone)
+- `/opengraph-image` — imagem OG gerada (compartilhamento em redes)
+
+**SEO / dados estruturados:** JSON-LD (`Organization` + `WebSite`) no `layout`. **Headers:** `nosniff`, `Referrer-Policy`, `Permissions-Policy` em `next.config.mjs`.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
